@@ -1,6 +1,5 @@
 package Webdriver;
 
-import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -28,7 +27,7 @@ public class Topic_09_Alert {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", projectPath + "\\browsers\\chromedriver.exe");
 		driver = new ChromeDriver();
 
 		explicitWait = new WebDriverWait(driver, 30);

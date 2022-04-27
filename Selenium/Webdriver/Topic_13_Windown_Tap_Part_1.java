@@ -1,6 +1,5 @@
 package Webdriver;
 
-import static org.testng.Assert.assertEquals;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -22,7 +21,7 @@ public class Topic_13_Windown_Tap_Part_1 {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", projectPath + "\\broewser\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", projectPath + "\\browsers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		explictiWait = new WebDriverWait(driver, 10);

@@ -6,7 +6,6 @@ import static org.testng.Assert.assertTrue;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import javax.swing.text.html.HTML;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -29,7 +28,7 @@ public class Topic_14_javascirp_Executor_01 {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", projectPath + "\\broewserss\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", projectPath + "\\browsers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

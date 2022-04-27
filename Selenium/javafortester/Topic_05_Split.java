@@ -1,10 +1,5 @@
 package javafortester;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.greaterThan;
-
-import org.openqa.selenium.By;
-import org.testng.Assert;
 
 public class Topic_05_Split {
 
