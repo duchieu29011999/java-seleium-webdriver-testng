@@ -11,7 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_14_Wait_Part_I {
+public class Topic_15_Wait_Part_I {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	WebDriverWait explicitWait;
@@ -38,12 +38,13 @@ public class Topic_14_Wait_Part_I {
 	}
 
 	@Test
-	public void TC_02() {
+	public void TC_02_Undisplayed_Invisible_In_Dom() {
+		explicitWait.until(ExpectedConditions.invisibilityOfAllElements(By.xpath("")))
 
 	}
 
 	@Test
-	public void TC_03() {
+	public void TC_03_Undisplayed_Invisible_out_Dom() {
 
 	}
 
