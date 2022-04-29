@@ -16,7 +16,7 @@ public class Topic_ {
 	public void beforeClass() {
 		System.setProperty("webdriver.chrome.driver", projectPath + "\\browsers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
 
